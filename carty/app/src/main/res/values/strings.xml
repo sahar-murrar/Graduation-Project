@@ -1,0 +1,78 @@
+<resources>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="Added_Succesfully_to_Favourites">Added Successfully to Favourits</string>
+
+    <string name="app_name">Carty</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="facebook_app_id">863122441161021</string>
+    <string name="fb_login_protocol_scheme">fb863122441161021</string>
+
+    <!--Log In Activity-->
+
+    <string name="LogInActivity_LogIn">Log In</string>
+    <string name="LogInActivity_Email">Email</string>
+    <string name="LogInActivity_Password">Password</string>
+    <string name="LogInActivity_enter">Enter</string>
+    <string name="LogInActivity_donthaveaccount">Dont have an account ? Press to Sign up !!</string>
+    <string name="LogInActivity_Matches">Logged In Successfully</string>
+    <string name="LogInActivity_notmatch">Wrong password</string>
+    <string name="LogInActivity_Emailwrong">Wrong Email</string>
+    <string name="LogInActivity_Remeber">Remember me !</string>
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="signed_out">Signed Out</string>
+
+
+    <string-array name="Cities">
+        <item>Ramallah</item>
+        <item>Jerusalem</item>
+        <item>Jericho</item>
+        <item>Hebron</item>
+        <item>Tulkarim</item>
+        <item>Nablus</item>
+        <item>Bethlehem</item>
+        <item>Jenin</item>
+        <item>Salfit</item>
+        <item>Qalqilya</item>
+    </string-array>
+
+
+    <string name="title_activity_admin_drawer">adminDrawerActivity</string>
+
+
+    <string name="full_name">full name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="phone">phone</string>
+    <string name="register">Register</string>
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+    <string name="input_error_regester">Regester Error try again </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

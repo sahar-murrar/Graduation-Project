@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profile_pic_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:foreground="@drawable/rounded_fg"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_baseline_person_outline_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_pic_imageView">
+
+            <TextView
+                android:id="@+id/textViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="profile"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="35sp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageViewName"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    app:srcCompat="@drawable/ic_name" />
+
+                <TextView
+                    android:id="@+id/profile_name_textView"
+                    android:layout_width="279dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="name"
+                    android:textColor="@color/material_on_surface_emphasis_high_type"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/buttonEditName"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/profile_name_textView"
+                    android:background="@drawable/pinkbutton"
+                    android:drawableRight="@drawable/baseline_dialpad_black_24dp"
+                    android:onClick="buttonClickedEditName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageViewPassword"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    app:srcCompat="@drawable/password" />
+
+                <TextView
+                    android:id="@+id/profile_Password_textView"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="password"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/buttonEditPassword"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/profile_name_textView"
+                    android:background="@drawable/pinkbutton"
+                    android:drawableRight="@drawable/baseline_dialpad_black_24dp"
+                    android:onClick="buttonClickedEditSurname" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageViewPhone"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    app:srcCompat="@drawable/baseline_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/profile_phoneno_textView"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="phone"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/buttonEditPhoneNo"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/profile_name_textView"
+                    android:background="@drawable/pinkbutton"
+                    android:drawableRight="@drawable/baseline_dialpad_black_24dp"
+                    android:onClick="buttonClickedEditPhoneNo" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageViewMail"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    app:srcCompat="@drawable/email" />
+
+                <TextView
+                    android:id="@+id/textViewEmailAdress"
+                    android:layout_width="377dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="email_address"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="25sp" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/btn_log_out"
+                android:layout_width="209dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/pinkbutton"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="navigateLogOut"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>

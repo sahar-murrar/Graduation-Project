@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.carty">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SplashScreen.SplashSleep"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.ShowOrderedProductsActivity" />
+        <activity android:name=".activities.ViewCustomersOrdersActivity" />
+        <activity android:name=".activities.AdminSalesListActivity" />
+        <activity android:name=".activities.CustomerSalesListActivity" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity8" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity7" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity6" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity5" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity4" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity3" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity2" />
+        <activity android:name=".AdminProducts.AdminProductsListActivity" />
+        <activity android:name=".activities.CreditCardActivity" />
+        <activity android:name=".activities.UserActitvity" />
+        <activity android:name=".activities.UserInformationActivity" />
+        <activity android:name=".activities.OrdersListActivity" />
+        <activity android:name=".activities.CartListActivity" />
+        <activity android:name=".activities.FavListActivity" />
+        <activity android:name=".activities.SignInAdmin" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.NotificationsActivity"></activity>
+
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity
+            android:name=".activities.adminDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".test.FavoriteActivity" />
+        <activity android:name=".activities.Home"></activity>
+        <activity android:name=".CustomerProducts.ProductsListActivity8" />
+        <activity android:name=".activities.UploadProductsActivity8" />
+        <activity android:name=".CustomerProducts.ProductsListActivity7" />
+        <activity android:name=".activities.UploadProductsActivity7" />
+        <activity android:name=".CustomerProducts.ProductsListActivity6" />
+        <activity android:name=".activities.UploadProductsActivity6" />
+        <activity android:name=".CustomerProducts.ProductsListActivity5" />
+        <activity android:name=".activities.UploadProductsActivity5" />
+        <activity android:name=".CustomerProducts.ProductsListActivity4" />
+        <activity android:name=".activities.UploadProductsActivity4" />
+        <activity android:name=".CustomerProducts.ProductsListActivity3" />
+        <activity android:name=".activities.UploadProductsActivity3" />
+        <activity android:name=".CustomerProducts.ProductsListActivity2" />
+        <activity android:name=".activities.UploadProductsActivity2" />
+        <activity android:name=".activities.CategoriesListActivity" />
+        <activity android:name=".CustomerProducts.ProductsListActivity" />
+        <activity android:name=".activities.UploadProductsActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.LoginActivity2" />
+        <activity
+            android:name=".SplashScreen.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.NavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false" />
+    </application>
+
+</manifest>

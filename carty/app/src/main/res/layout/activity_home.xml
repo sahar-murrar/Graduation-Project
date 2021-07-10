@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9A6AF"
+    tools:context=".ui.Home.HomeView">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cv_slider_mainActivity"
+        android:background="#E9A6AF"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_slider_mainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="627dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="19dp">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1">
+
+            </com.smarteist.autoimageslider.SliderView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#E9A6AF"
+            android:onClick="renewItems"
+            android:text="START"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="88dp"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+</LinearLayout>
